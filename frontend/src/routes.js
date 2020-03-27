@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // pages
 import Logon from './pages/Logon'
 import Register from './pages/Register'
+import Profile from './pages/Profile'
+import NewIncident from './pages/NewIncident'
 
 export default function src() {
   return (
@@ -11,6 +13,8 @@ export default function src() {
       <Switch>
         <Route path="/" exact component={Logon} />
         <Route path="/register" component={Register} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/incidents/new" component={NewIncident} />
       </Switch>
     </BrowserRouter>
   );
